@@ -1,46 +1,46 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
    <meta charset="UTF-8">
-   <title>¼îÇÎ¸ô È¸¿ø°ü¸®</title>
+   <title>ì‡¼í•‘ëª° íšŒì›ê´€ë¦¬</title>
    <link rel="stylesheet" href="./css/style.css">
    <script type="text/javascript">
    function checkValue(){
 
       if(!document.data.custname.value){
-         alert("È¸¿ø¼º¸íÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+         alert("íšŒì›ì„±ëª…ì„ ì…ë ¥í•˜ì„¸ìš”.");
          document.data.custname.focus();
          return false;
       } else if(!document.data.phone.value){
-         alert("ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+         alert("ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
          document.data.phone.focus();
          return false;
       } else if(!document.data.address.value){
-         alert("ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+         alert("ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
          document.data.address.focus();
          return false;
       } else if(!document.data.joindate.value){
-         alert("°¡ÀÔÀÏÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+         alert("ê°€ì…ì¼ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
          document.data.joindate.focus();
          return false;
       } else if(!document.data.grade.value){
-         alert("°í°´µî±ŞÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+         alert("ê³ ê°ë“±ê¸‰ì„ ì…ë ¥í•˜ì„¸ìš”.");
          document.data.grade.focus();
          return false;
       } else if(!document.data.city.value){
-         alert("µµ½ÃÄÚµå¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+         alert("ë„ì‹œì½”ë“œë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
          document.data.city.focus();
          return false;
       }
    }
       function checkDel(custno){
-         msg="»èÁ¦ÇÏ°Ú½À´Ï±î?";
+         msg="ì‚­ì œí•˜ê² ìŠµë‹ˆê¹Œ?";
          if(confirm(msg)!=0){
-	alert("»èÁ¦µÇ¾ú½À´Ï´Ù.");
+	alert("ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.");
          } else{
-	alert("»èÁ¦°¡ Ãë¼ÒµÇ¾ú½À´Ï´Ù.");
+	alert("ì‚­ì œê°€ ì·¨ì†Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 	return;
          }
       }
@@ -50,43 +50,43 @@
 <body>
    <div class="section">
       <iframe src="./layout/header.jsp" width=100% height=120px></iframe>
-      <h3 class="title">È¨¼îÇÎ È¸¿ø Á¤º¸ ¼öÁ¤</h3>
+      <h3 class="title">í™ˆì‡¼í•‘ íšŒì› ì •ë³´ ìˆ˜ì •</h3>
       <form name="data" action="join_p.jsp" method="post" onsubmit="return checkValue()">
 
       <table class="table_line">
          <tr>
-	<th>È¸¿ø¹øÈ£(ÀÚµ¿¹ß»ı)</th>
+	<th>íšŒì›ë²ˆí˜¸(ìë™ë°œìƒ)</th>
 	<td><input type="text" name="custno" value="100013" size="10" readonly></td>
          </tr>
          <tr>
-	<th>È¸¿ø¼º¸í</th>
+	<th>íšŒì›ì„±ëª…</th>
 	<td><input type="text" name="custname" size="10" required></td>
          </tr>
          <tr>
-	<th>È¸¿øÀüÈ­</th>
+	<th>íšŒì›ì „í™”</th>
 	<td><input type="text" name="phone" size="15" required></td>
          </tr>
          <tr>
-	<th>È¸¿øÁÖ¼Ò</th>
+	<th>íšŒì›ì£¼ì†Œ</th>
 	<td><input type="text" name="address" size="25" required></td>
          </tr>
          <tr>
-	<th>°¡ÀÔÀÏÀÚ</th>
+	<th>ê°€ì…ì¼ì</th>
 	<td><input type="text" name="joindate" size="10" required></td>
          </tr>
          <tr>
-	<th>°í°´µî±Ş[A:VIP, B:ÀÏ¹İ, C:Á÷¿ø]</th>
+	<th>ê³ ê°ë“±ê¸‰[A:VIP, B:ì¼ë°˜, C:ì§ì›]</th>
 	<td><input type="text" name="grade" size="10" required></td>
          </tr>
          <tr>
-	<th>µµ½ÃÄÚµå</th>
+	<th>ë„ì‹œì½”ë“œ</th>
 	<td><input type="text" name="city" size="10"required></td>
          </tr>
          <tr>
 	<td colspan="2" align="center">
-	   <input type="submit" value="¼öÁ¤">
-	   <input type="button" value="Á¶È¸" onclick="location.href='member_list.jsp'">
-	   <input type="button" value="»èÁ¦" onclick="checkDel('custno')">
+	   <input type="submit" value="ìˆ˜ì •">
+	   <input type="button" value="ì¡°íšŒ" onclick="location.href='member_list.jsp'">
+	   <input type="button" value="ì‚­ì œ" onclick="checkDel('custno')">
 	</td>
          </tr>
       </table>
