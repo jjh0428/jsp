@@ -1,37 +1,37 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
    <meta charset="UTF-8">
-   <title>¼îÇÎ¸ô È¸¿ø°ü¸®</title>
+   <title>ì‡¼í•‘ëª° íšŒì›ê´€ë¦¬</title>
    <link rel="stylesheet" href="./css/style.css">
    <script type="text/javascript">
    function checkValue(){
       var cv = document.data;
 
       if(!cv,.custname.value==""){
-         alert("È¸¿ø¼º¸íÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+         alert("íšŒì›ì„±ëª…ì„ ì…ë ¥í•˜ì„¸ìš”.");
          cv.custname.focus();
          return false;
       } else if(!cv.phone.value==""){
-         alert("ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+         alert("ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
          cv.phone.focus();
          return false;
       } else if(!cv.address.value==""){
-         alert("ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+         alert("ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
          cv.address.focus();
          return false;
       } else if(!cv.joindate.value==""){
-         alert("°¡ÀÔÀÏÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+         alert("ê°€ì…ì¼ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
          cv.joindate.focus();
          return false;
       } else if(!cv.grade.value==""){
-         alert("°í°´µî±ŞÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+         alert("ê³ ê°ë“±ê¸‰ì„ ì…ë ¥í•˜ì„¸ìš”.");
          cv.grade.focus();
          return false;
       } else if(!document.data.city.value){
-         alert("µµ½ÃÄÚµå¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+         alert("ë„ì‹œì½”ë“œë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
          document.data.city.focus();
          return false;
       }
@@ -42,43 +42,43 @@
 <body>
    <div class="section">
       <iframe src="./layout/header.jsp" width=100% height=120px></iframe>
-      <h3 class="title">È¸¿øµî·Ï</h3>
+      <h3 class="title">íšŒì›ë“±ë¡</h3>
       <form name="data" action="join_p.jsp" method="post" onsubmit="return checkValue()">
 
       <table class="table_line">
          <tr>
-	<th>È¸¿ø¹øÈ£(ÀÚµ¿¹ß»ı)</th>
+	<th>íšŒì›ë²ˆí˜¸(ìë™ë°œìƒ)</th>
 	<td><input type="text" name="custno" value="100013" size="10" readonly></td>
          </tr>
          <tr>
-	<th>È¸¿ø¼º¸í</th>
+	<th>íšŒì›ì„±ëª…</th>
 	<td><input type="text" name="custname" size="10"></td>
          </tr>
          <tr>
-	<th>È¸¿øÀüÈ­</th>
+	<th>íšŒì›ì „í™”</th>
 	<td><input type="text" name="phone" size="15"></td>
          </tr>
          <tr>
-	<th>È¸¿øÁÖ¼Ò</th>
+	<th>íšŒì›ì£¼ì†Œ</th>
 	<td><input type="text" name="address" size="25"></td>
          </tr>
          <tr>
-	<th>°¡ÀÔÀÏÀÚ</th>
+	<th>ê°€ì…ì¼ì</th>
 	<td><input type="text" name="joindate" size="10"></td>
          </tr>
          <tr>
-	<th>°í°´µî±Ş[A:VIP, B:ÀÏ¹İ, C:Á÷¿ø]</th>
+	<th>ê³ ê°ë“±ê¸‰[A:VIP, B:ì¼ë°˜, C:ì§ì›]</th>
 	<td><input type="text" name="grade" size="10"></td>
          </tr>
          <tr>
-	<th>µµ½ÃÄÚµå</th>
+	<th>ë„ì‹œì½”ë“œ</th>
 	<td><input type="text" name="city" size="10"></td>
          </tr>
          <tr>
 	<td colspan="2" align="center">
-	   <input type="submit" value="µî·Ï">
-	   <input type="button" value="Ãë¼Ò" onclick="location.href='join.jsp'">
-	   <input type="button" value="Á¶È¸" onclick="location.href='member_list.jsp'">
+	   <input type="submit" value="ë“±ë¡">
+	   <input type="button" value="ì·¨ì†Œ" onclick="location.href='join.jsp'">
+	   <input type="button" value="ì¡°íšŒ" onclick="location.href='member_list.jsp'">
 	</td>
          </tr>
       </table>
