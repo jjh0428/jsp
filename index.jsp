@@ -1,26 +1,26 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
    <meta charset="UTF-8">
-   <title>¼îÇÎ¸ô È¸¿ø°ü¸®</title>
+   <title>ì‡¼í•‘ëª° íšŒì›ê´€ë¦¬</title>
    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
    <main class="section">
       <iframe src="./layout/header.jsp" width=100% height=120px></iframe>
-      <h2 class="title">¼îÇÎ¸ô È¸¿ø°ü¸® ÇÁ·Î±×·¥</h2>
+      <h2 class="title">ì‡¼í•‘ëª° íšŒì›ê´€ë¦¬ í”„ë¡œê·¸ëž¨</h2>
 
          <p>
-         ¼îÇÎ¸ô È¸¿øÁ¤º¸¿Í È¸¿ø¸ÅÃâÁ¤º¸ µ¥ÀÌÅÍº£ÀÌ½º¸¦ ±¸ÃàÇÏ°í È¸¿ø°ü¸® ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ´Â ÇÁ·Î±×·¥ÀÌ´Ù.<br>
-         ÇÁ·Î±×·¥ ÀÛ¼º ¼ø¼­<br>
-         1. È¸¿øÁ¤º¸ Å×ÀÌºíÀ» »ý¼ºÇÑ´Ù.<br>
-         2. ¸ÅÃâÁ¤º¸ Å×ÀÌºíÀ» »ý¼ºÇÑ´Ù.<br>
-         3. È¸¿øÁ¤º¸, ¸ÅÃâÁ¤º¸ Å×ÀÌºí¿¡ Á¦½ÃµÈ ¹®Á¦ÁöÀÇ ÂüÁ¶µ¥ÀÌÅÍ¸¦ Ãß°¡ »ý¼ºÇÑ´Ù.<br>
-         4. È¸¿øÁ¤º¸ ÀÔ·Â È­¸éÇÁ·Î±×·¥À» ÀÛ¼ºÇÑ´Ù.<br>
-         5. È¸¿øÁ¤º¸ Á¶È¸ ÇÁ·Î±×·¥À» ÀÛ¼ºÇÑ´Ù.<br>
-         6. È¸¿ø¸ÅÃâÁ¤º¸ Á¶È¸ ÇÁ·Î±×·¥À» ÀÛ¼ºÇÑ´Ù.<br>
+         ì‡¼í•‘ëª° íšŒì›ì •ë³´ì™€ íšŒì›ë§¤ì¶œì •ë³´ ë°ì´í„°ë² ì´ìŠ¤ë¥¼ êµ¬ì¶•í•˜ê³  íšŒì›ê´€ë¦¬ í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ëŠ” í”„ë¡œê·¸ëž¨ì´ë‹¤.<br>
+         í”„ë¡œê·¸ëž¨ ìž‘ì„± ìˆœì„œ<br>
+         1. íšŒì›ì •ë³´ í…Œì´ë¸”ì„ ìƒì„±í•œë‹¤.<br>
+         2. ë§¤ì¶œì •ë³´ í…Œì´ë¸”ì„ ìƒì„±í•œë‹¤.<br>
+         3. íšŒì›ì •ë³´, ë§¤ì¶œì •ë³´ í…Œì´ë¸”ì— ì œì‹œëœ ë¬¸ì œì§€ì˜ ì°¸ì¡°ë°ì´í„°ë¥¼ ì¶”ê°€ ìƒì„±í•œë‹¤.<br>
+         4. íšŒì›ì •ë³´ ìž…ë ¥ í™”ë©´í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•œë‹¤.<br>
+         5. íšŒì›ì •ë³´ ì¡°íšŒ í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•œë‹¤.<br>
+         6. íšŒì›ë§¤ì¶œì •ë³´ ì¡°íšŒ í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•œë‹¤.<br>
          </p>
       <div id="footer">
          <iframe src="./layout/footer.jsp" width=100% height=30px></iframe>
