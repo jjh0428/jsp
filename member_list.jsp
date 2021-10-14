@@ -1,18 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
    <meta charset="UTF-8">
-   <title>¼îÇÎ¸ô È¸¿ø°ü¸®</title>
+   <title>ì‡¼í•‘ëª° íšŒì›ê´€ë¦¬</title>
    <link rel="stylesheet" href="./css/style.css">
    <script type="text/javascript">
       function checkDel(custno){
-         msg="»èÁ¦ÇÏ°Ú½À´Ï±î?";
+         msg="ì‚­ì œí•˜ê² ìŠµë‹ˆê¹Œ?";
          if(confirm(msg)!=0){
-	alert("»èÁ¦µÇ¾ú½À´Ï´Ù.");
+	alert("ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.");
          } else{
-	alert("»èÁ¦°¡ Ãë¼ÒµÇ¾ú½À´Ï´Ù.");
+	alert("ì‚­ì œê°€ ì·¨ì†Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 	return;
          }
       }
@@ -22,18 +22,18 @@
 <body>
    <div class="section">
       <iframe src="./layout/header.jsp" width=100% height=120px></iframe>
-      <h3 class="title">È¸¿ø¸ñ·ÏÁ¶È¸/¼öÁ¤</h3>
+      <h3 class="title">íšŒì›ëª©ë¡ì¡°íšŒ/ìˆ˜ì •</h3>
 
       <table class="table_line">
          <tr>
-	<th>È¸¿ø¹øÈ£</th>
-	<th>È¸¿ø¼º¸í</th>
-	<th>ÀüÈ­¹øÈ£</th>
-	<th>ÁÖ¼Ò</th>
-	<th>°¡ÀÔÀÏÀÚ</th>
-	<th>°í°´µî±Þ</th>
-	<th>°ÅÁÖÁö¿ª</th>
-	<th>¼öÁ¤ ¹× »èÁ¦</th>
+	<th>íšŒì›ë²ˆí˜¸</th>
+	<th>íšŒì›ì„±ëª…</th>
+	<th>ì „í™”ë²ˆí˜¸</th>
+	<th>ì£¼ì†Œ</th>
+	<th>ê°€ìž…ì¼ìž</th>
+	<th>ê³ ê°ë“±ê¸‰</th>
+	<th>ê±°ì£¼ì§€ì—­</th>
+	<th>ìˆ˜ì • ë° ì‚­ì œ</th>
          </tr>
          <tr>
 	<th>custno</th>
@@ -44,8 +44,8 @@
 	<th>grade</th>
 	<th>city</th>
 	<td colspan="2" align="center">
-	   <input type="button" value="¼öÁ¤" onclick="parent.location.href='update.jsp'">
-	   <input type="button" value="»èÁ¦" onclick="checkDel('custno')">
+	   <input type="button" value="ìˆ˜ì •" onclick="parent.location.href='update.jsp'">
+	   <input type="button" value="ì‚­ì œ" onclick="checkDel('custno')">
 	</td>
          </tr>
       </table>
