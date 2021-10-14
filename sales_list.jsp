@@ -1,24 +1,24 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
    <meta charset="UTF-8">
-   <title>¼îÇÎ¸ô È¸¿ø°ü¸®</title>
+   <title>ì‡¼í•‘ëª° íšŒì›ê´€ë¦¬</title>
    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
    <div class="section">
       <iframe src="./layout/header.jsp" width=100% height=120px></iframe>
-      <h3 class="title">È¸¿ø¸ÅÃâÁ¶È¸</h3>
+      <h3 class="title">íšŒì›ë§¤ì¶œì¡°íšŒ</h3>
 
       <table class="table_line">
          <tr>
-	<th>È¸¿ø¹øÈ£</th>
-	<th>È¸¿ø¼º¸í</th>
-	<th>°í°´µî±Þ</th>
-	<th>¸ÅÃâ</th>
+	<th>íšŒì›ë²ˆí˜¸</th>
+	<th>íšŒì›ì„±ëª…</th>
+	<th>ê³ ê°ë“±ê¸‰</th>
+	<th>ë§¤ì¶œ</th>
          </tr>
          <tr>
 	<th>custno</th>
