@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
    <meta charset="UTF-8">
    <title>쇼핑몰 회원관리</title>
-   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
    <main class="section">
@@ -22,8 +23,9 @@
          5. 회원정보 조회 프로그램을 작성한다.<br>
          6. 회원매출정보 조회 프로그램을 작성한다.<br>
          </p>
-      <div id="footer">
+    </main>
+      <footer id="footer">
          <iframe src="./layout/footer.jsp" width=100% height=30px></iframe>
-      </div>
-   </main>
+      </footer>
 </body>
+</html>
