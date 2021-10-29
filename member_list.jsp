@@ -41,7 +41,7 @@
         <h3  class="title">회원목록조회/수정</h3>
         <div class="scroll">
             <table class="table_line">
-                   <tr>
+                <tr>
                     <th>회원번호</th>
                     <th>회원성명</th>
                     <th>전화번호</th>
@@ -56,15 +56,15 @@
                     <td class="link">
                         <a href="update.jsp?click_custno=<%= rs.getString("custno")%>"> <%= rs.getString("custno") %></a>
                     </td>
-                       <td><%= rs.getString("custname") %></td>
-                       <td><%= rs.getString("phone") %></td>
-                       <td><%= rs.getString("address") %></td>
-                      <td><%= rs.getString("joindate") %></td>
-                       <td><%= rs.getString("grade") %></td>
-                       <td><%= rs.getString("city") %></td>
+                    <td><%= rs.getString("custname") %></td>
+                    <td><%= rs.getString("phone") %></td>
+                    <td><%= rs.getString("address") %></td>
+                    <td><%= rs.getString("joindate") %></td>
+                    <td><%= rs.getString("grade") %></td>
+                    <td><%= rs.getString("city") %></td>
    
-                       <td><input type="button" value="수정" onclick="document.location.href='update.jsp?click_custno=<%= rs.getString("custno")%>'">
-                         <input type="button" value="삭제" onclick="checkDel(<%= rs.getString("custno")%>);"></td>
+                    <td><input type="button" value="수정" onclick="document.location.href='update.jsp?click_custno=<%= rs.getString("custno")%>'">
+                        <input type="button" value="삭제" onclick="checkDel(<%= rs.getString("custno")%>);"></td>
                 </tr>
                 <%} %>
         </table>
